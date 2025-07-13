@@ -1,0 +1,14 @@
+# Enable Apache's rewrite engine
+RewriteEngine On
+
+# Optional: Force HTTPS
+RewriteCond %{HTTPS} off
+RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+# Skip rewriting for existing files and folders (CSS, JS, images, etc.)
+RewriteCond %{REQUEST_FILENAME} -f [OR]
+RewriteCond %{REQUEST_FILENAME} -d
+RewriteRule ^ - [L]
+
+# Rewrite all other requests to index.php
+RewriteRule ^ index.php [QSA,L]
