@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: ganpanmarthdesipro
+    env: web
+    runtime: native
+    plan: free
+    region: oregon
+    buildCommand: ""
+    startCommand: ""
+    rootDir: .
