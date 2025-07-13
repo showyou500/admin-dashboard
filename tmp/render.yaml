@@ -7,5 +7,5 @@
     startCommand: ""
     autoDeploy: true
     branch: main
-    repo: https://github.com/your-username/your-repo-name
+    repo: https://github.com/showyou500/admin-dashboard
     rootDir: .
