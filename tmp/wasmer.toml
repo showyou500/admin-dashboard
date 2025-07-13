@@ -1,0 +1,7 @@
+﻿[package]
+name = "admin-dashboard"
+version = "1.0.0"
+entrypoint = "php dashboard.php"
+
+[fs]
+public = "."

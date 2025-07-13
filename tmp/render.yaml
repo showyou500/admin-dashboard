@@ -1,0 +1,11 @@
+﻿services:
+  - type: web
+    name: admin-dashboard
+    env: php
+    plan: free
+    buildCommand: ""
+    startCommand: ""
+    autoDeploy: true
+    branch: main
+    repo: https://github.com/your-username/your-repo-name
+    rootDir: .
